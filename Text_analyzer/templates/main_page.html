@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text_analyzer</title>
+</head>
+<body>
+<h1>Welcome to Text Analyzer</h1>
+Enter text and select a operation to perform.<br><br>
+<div>
+   <form action="analyze" method="GET" { % csrf_token %}>
+    <textarea name="text" style="margin: 0px;width: 562px;height: 175px;">
+    Enter text here....</textarea><br><br>
+    <input type="checkbox" name="UPPERCASE">UPPERCASE<br><br>
+    <input type="checkbox" name="lowercase">lowercase<br><br>
+    <input type="checkbox" name="removepunc"> Remove Punctuation <br><br>
+    <input type="checkbox" name="charcount"> Count characters <br><br>
+       <button type="submit">Analyze</button>
+</form>
+</div>
+</body>
+</html>
